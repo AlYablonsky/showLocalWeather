@@ -1,0 +1,173 @@
+body {
+    
+    background-image: url("http://polytopia.net/austinSkyLine.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    overflow: scroll;
+    background-size:cover;
+    overflow-x: hidden;
+}
+
+img {
+    vertical-align: middle;
+    margin-bottom: 0;
+    width: 120px;
+    height: 120px;
+}
+
+/* Style the title section - the text does not change but the colors change depending on whether it is day or night*/
+#title {
+    
+    font-size:  5em;
+    font-family: 'Roboto', sans-serif; 
+/*    color: whitesmoke; */
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* Styles the city section, also different colors whether day or night */
+#city {
+    font-size: 4em;
+    font-family: 'Lobster';
+/*    color: whitesmoke;  */
+    margin-bottom: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+/*    margin-bottom: 100px; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body p {
+    font-size: 2em;
+    font-family: 'Roboto';
+    color: purple;
+/*    margin-bottom: 0; */
+    text-align: center; 
+    display: inline;
+/*    margin-left: 70px;
+    margin-right: 70px;  */
+    font-weight: 700;
+}
+
+
+.btn {
+    font-weight: 700;
+    margin-right:auto;
+    margin-left: auto;
+    padding-top: 0;
+    height: 60px;
+    width: 500px;
+    font-size: 2em;
+/*    background-color: rgba(240, 240, 240, 0.8);  */
+    text-align: left;
+/*    color: purple;  */
+}   
+/* All encompassing "div" that includes the weather icon, temperature. wind speed and direction displayed as inline block */        
+#alignIt {
+    
+    display: inline-block;
+}    
+
+/* A "div" cotaining the temperature display and the button for F => C degree converter */
+
+#alignIt2 {
+    margin-left:-7px;
+    margin-right: auto;
+    align-content: center;
+    align-items: center;
+    width: 200px;
+    margin-top: 70px;
+}    
+
+/* This "div" containing the styling for the weather description, and wind speed and direction */
+#alignIt1 {
+    
+    width: 500px;
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}    
+
+/* This styles the display of the weather icom*/
+#icon1 {
+    
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* The next four CSS below are for the styling "Temp" (temperature display) elements, the "Change the tenperature" button, the Weather output display  and the Wind Speed and direction" */
+
+#fTemp {
+/*    color: white;   */
+    text-align: center;
+    font-size: 3em;
+/*  background-color: rgba(240, 240, 240, 0);  */ 
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 66px;   
+    border-radius: 0 75px 0 0;
+    padding-right: 30px;
+}
+/* This is the CSS for the "Change the tenperature" button*/
+
+#changeTemp {
+
+    text-align: center;
+/*    background-color: rgba(240, 240, 240, 0); */
+/*    color: white;   */
+    border: 1px solid black;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
+    height: 66px; 
+    padding-right: 30px;
+    border-radius: 0 0 75px 0;
+    box-shadow: 25px 25px 15px 10px  rgba(0, 0, 0, 0.65); 
+}
+
+/* This is the CSS styling the weather display */
+#weatherType {
+    font-size: 3em;
+/*    color: white;  */
+    margin-right: auto;
+    margin-left: auto;
+/*    width: 400px; */
+   /* height: 200px; */
+    height: auto;
+    text-align: left;
+    border: 0;
+/*  background-color: rgba(240, 240, 240, 0); */ 
+    padding-left: 40px;
+     border-radius: 75px 0 0 0;
+} 
+
+/* This is the CSS styling the Wind Speed and direction" */
+
+#windSpeed {
+    font-size: 3em;
+  /*  color: white; */
+    border: 0; 
+    margin-right: auto;  
+    margin-left: auto;  
+/*    width: 450px;  */
+/*    height: 200px; */
+    height: auto;
+    text-align: left;
+/*    background-color: rgba(240, 240, 240, 0); */
+    padding-left: 40px;
+    border-radius:  0 0 0 75px ;
+}
+

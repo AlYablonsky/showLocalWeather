@@ -1,0 +1,45 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Project #4 Show Local Weather</title>
+        <meta name="description" content="Show Local Weather Project">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link rel="stylesheet" href="ShowLocalWeather.css">  
+        <link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.3.9/styles/skycons.min.css">
+<!-- 
+Comments, Two sets of vertical buttons are, the first to display weather conditions, with the wind speed and direction directly underneat it, and the second verticle list
+styles the temp (F) or (C), with a deg F to degree C directly beneath it. The weather icon is displayed to the left of everthing.
+-->    
+    </head>
+    <body class="container-fluid">
+        
+        <h1 id="title"></h1> <!-- city and state fields from the ip-api are filled in the city field, these fields are scripted to be white and night and indigo during day -->  
+        <h2 id="city"></h2> <!-- The city and state location is displayed here through the the script  -->
+        <div class="text-center">
+            
+            
+            <div id="alignIt">  <!-- This div surrounds all the elements of the page the weather icon, the weather display and the windspeed -->
+              
+                <div id="icon1"></div> <!-- this is for the icon only -->
+                <!-- This div surrounds a vertical list for the weather and wind speed, these are actually aligned buttons with no background -->
+                <div class="btn-group-vertical" role="group" id="alignIt1"> 
+                    <button class=" btn btn-default" id="weatherType"></button>  <!-- button for weather display does bot really function as a button -->
+                    <button class="btn btn-default" id="windSpeed"></button> <!-- button for wind speed and direction display does bot really function as a button -->
+                </div>  <!-- This div surrounds a vertical list for the temp. and temp. conversion button, which has a border so it can be seen as clickable -->
+                <div class="btn-group-vertical" role="group" id="alignIt2">
+                    <button class="btn btn-default" id ="fTemp"></button>  <!-- Button for degrees C -->
+                    <button class="btn btn-default" id="changeTemp"></button> <!-- Button for deg C to degrees F conversion  -->
+                </div>
+            </div>
+        </div>   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <script src="ShowLocalWeather.js"></script>
+    </body>
+</html>
+
+  
