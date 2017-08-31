@@ -127,7 +127,7 @@ $(document).ready(function () {
                     $("body").css("background-image", "url(http://polytopia.net/austinSkyLineCloudyNight.jpg)");
                     }
             }
-				$("#surroundIcon").css("background-color", surroundIconDisplay);
+	     $("#surroundIcon").css("background-color", surroundIconDisplay);
         });    
        
     });     
