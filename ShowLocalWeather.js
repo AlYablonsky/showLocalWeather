@@ -6,7 +6,7 @@ $(document).ready(function () {
       var  lat = data2.lat;
       var long = data2.lon;
   
-      var api = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&appid=1d2b8be920a1fc84c08de95be1834ad9';
+      var api = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&appid=1d2b8be920a1fc84c08de95be1834ad9";
         
         $.getJSON(api, function(data) {
     
@@ -75,7 +75,7 @@ $(document).ready(function () {
             var degPerDir = 360/numOfDirections;
             var offSet = degPerDir/2;  
                 
-            var windArray = [ 'N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW'];
+            var windArray = [ "N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];
             var setPoint =   (Math.floor((direction + offSet ) / degPerDir)) % numOfDirections;   
             return windArray[setPoint];
             }
@@ -95,23 +95,23 @@ $(document).ready(function () {
             if (dayOrNight === "d") {
             		
                 if ( weatherType.toLowerCase().indexOf("storm") !== -1 || weatherType.toLowerCase().indexOf("rain") !== -1 ||  weatherType.toLowerCase().indexOf("drizzle") !==     -1 )    {
-                    $('body').css('background-image', 'url(http://polytopia.net/austinSkyLineRain.jpg)');
+                    $("body").css("background-image", "url(http://polytopia.net/austinSkyLineRain.jpg)");
                     }
                 else if ( weatherType.toLowerCase().indexOf("snow") !== -1)
                     {
-                    $('body').css('background-image', 'url(http://polytopia.net/austinSkyLineSnow.jpg)');
+                    $("body").css("background-image", "url(http://polytopia.net/austinSkyLineSnow.jpg)");
                     }
                 else if (weatherType.toLowerCase().indexOf("overcast") === -1 && weatherType.toLowerCase().indexOf("clouds") !== -1 )
                     {
-                    $('body').css('background-image', 'url(http://polytopia.net/austinSkyLinePartlyCloudy.jpg)');
+                    $("body").css("background-image", "url(http://polytopia.net/austinSkyLinePartlyCloudy.jpg)");
                     } 
                 else if (weatherType.toLowerCase().indexOf("overcast") !== -1 ||  weatherType.toLowerCase().indexOf("mist") !== -1 || weatherType.toLowerCase().indexOf("clouds") !== -1  || weatherType.toLowerCase().indexOf("haze") !== -1  ) 
                     {
-                    $('body').css('background-image', 'url(http://polytopia.net/austinSkyLineCloudy.jpg)');
+                    $("body").css("background-image", "url(http://polytopia.net/austinSkyLineCloudy.jpg)");
                     }
                 else if ( weatherType.toLowerCase().indexOf("clear") !== -1)
                     {
-                    $('body').css('background-image', 'url(http://polytopia.net/austinSkyLineSunny.jpg)');
+                    $("body").css("background-image", "url(http://polytopia.net/austinSkyLineSunny.jpg)");
                         surroundIconDisplay = "midnightblue";
                     }   
             }
@@ -120,14 +120,14 @@ $(document).ready(function () {
                 
                 if ( weatherType.toLowerCase().indexOf("clear") !== -1)
                     {    
-                    $('body').css('background-image', 'url(http://polytopia.net/austinSkyLineNight.jpg)');
+                    $("body").css("background-image", "url(http://polytopia.net/austinSkyLineNight.jpg)");
 
                     } 
                 else {
-                    $('body').css('background-image', 'url(http://polytopia.net/austinSkyLineCloudyNight.jpg)');
+                    $("body").css("background-image", "url(http://polytopia.net/austinSkyLineCloudyNight.jpg)");
                     }
             }
-				document.getElementById("surroundIcon").style.backgroundColor = surroundIconDisplay;
+				$("#surroundIcon").css("background-color", surroundIconDisplay);
         });    
        
     });     
