@@ -37,21 +37,15 @@ $(document).ready(function () {
                 buttonBackgroundColorDisplay = "hotpink";
                 buttonFontDisplay = "white";
             }
+               // Styling the fontcolor and background for each (non-button) section by id
+            $("#title").css({ color: fontColorDisplay, "background-color": backgroundColorDisplay });
+            $("#city").css({ color: fontColorDisplay, "background-color": backgroundColorDisplay });
           
-           
-            // Styling the fontcolor and background for each (non-button) section by id    
-            document.getElementById("title").style.color = fontColorDisplay;
-            document.getElementById("city").style.color = fontColorDisplay;
-            document.getElementById("title").style.backgroundColor = backgroundColorDisplay;
-            document.getElementById("city").style.backgroundColor = backgroundColorDisplay;
-			
-             
             // Using Jquery to style background colors and colors for all button elements
             $(".btn").css({"color" : fontColorDisplay, "background-color" : backgroundColorDisplay });
             
             // Uniquely styling background color and colors for the deg F to deg C button, only button the reacts on click
-            document.getElementById("changeTemp").style.backgroundColor = buttonBackgroundColorDisplay;
-            document.getElementById("changeTemp").style.color = buttonFontDisplay;
+            $("#changeTemp").css({color: buttonFontDisplay,"background-color": buttonBackgroundColorDisplay});
             
             // Writing the "title", "city", weather icon and "temperature" to html 
             $("#title").html("Free Code Camp Local Weather App");
